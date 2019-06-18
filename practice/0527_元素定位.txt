@@ -1,0 +1,48 @@
+============课堂派首页===========
+A+课堂派，xpath层级定位：//div[@class="logo fl"]//a[@class="active"]
+首页：//div[@class="nav fl"]//a[@class="active"]
+移动端：//a[text()="移动端"]   #文本定位
+解决方案：//a[text()="解决方案"]
+会员权益：//a[text()="会员权益"]
+帮助中心：//a[text()="帮助中心"]
+在线考勤：//div[@id="zaixiankaoqin"]
+进入课堂派：//span[text()="进入课堂派"]    ， find_element_by_link_text("进入课堂派")
+
+
+========课堂======
+课堂：//a[@class="active"]
+加入课程：//div[@class="ktcon1l fl"]
+私信：//a[text()="私信"]
+论文查重：//a[text()="论文查重"]
+文库：//a[text()="文库"]
+课程资源：//a[text()="课程资源"]
+python全栈15期：//a[text()="Python全栈第15期"]   ==》//dt[@class="bgclass1"]//a[@title="Python全栈第15期"]
+设置选择按钮：//a[@class="kdmore on"]
+
+=============python全栈15期==========
+同学：//a[text()="同学"]
+课堂详情：//a[text()="课堂详情"]
+作业：//a[text()="作业"]
+话题：//a[text()="话题"]
+资料：//a[text()="资料"]
+公告：//a[text()="公告"]
+测试：//a[text()="测试"]
+互动：//a[text()="互动"]
+0601-web操作作业补充：//a[@title="0601-web操作作业补充 "]
+上传作业：//a[contains(@href,'MDAwMDAwMDAwMLSGx5eG36tr.html') and @class='sc-btn']
+          #找到部分匹配加多重元素
+已提交：//a[@title="2019-04-19 完成正常注册手机号码参数化"]/parent::h3/parent::div/following-sibling::div[@class="work-new-r fl "]/a[@class="view-work"]
+       #找到父亲的父亲（即同一个爷爷），在往下一层一层的剥开
+查看成绩：//a[contains(@href,'MDAwMDAwMDAwMLSGtZSGqdFs.html') and @class='view-score']
+
+=========同学========
+教学团队：//li[@class='teacherTeam active']
+丢丢：//span[text()="丢丢"]
+全部学生：//li[@class="all active"]
+柠檬班的华华：//p[@title="柠檬班的华华"]
+华华的邮箱：//p[@title="1255811581@qq.com"]
+
+
+时间等待：三种做法，
+time.sleep()  傻等时间
+智能方法，x秒内出现就下一步，没有出现就发脾气
